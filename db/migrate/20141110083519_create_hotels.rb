@@ -1,7 +1,9 @@
 class CreateHotels < ActiveRecord::Migration
   def change
     create_table :hotels do |t|
-      t.string :cities
+      t.string :name
+      t.integer :rating
+      t.integer :city_id
 
       t.timestamps
     end

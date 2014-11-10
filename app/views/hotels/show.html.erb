@@ -1,8 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Cities:</strong>
-  <%= @hotel.cities %>
+  <strong>Name:</strong>
+  <%= @hotel.name %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @hotel.rating %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @hotel.city_id %>
 </p>
 
 <%= link_to 'Edit', edit_hotel_path(@hotel) %> |

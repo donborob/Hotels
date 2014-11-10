@@ -11,10 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141029153231) do
+ActiveRecord::Schema.define(version: 20141110083519) do
 
   create_table "hotels", force: true do |t|
-    t.string   "cities"
+    t.string   "name"
+    t.integer  "rating"
+    t.integer  "city_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
